@@ -1,0 +1,14 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ui-catalog-tekton
+  title: 单独测试 octopus tekton 插件
+  description: 单独测试 octopus tekton 插件
+  annotations:
+    backstage.io/kubernetes-namespace: developer-platform-build
+    backstage.io/kubernetes-label-selector: builds.katanomi.dev/name=octopus
+spec:
+  type: website
+  lifecycle: test
+  owner: group:test
